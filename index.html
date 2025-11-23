@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>222 Founding Architects</title>
+  <script src="https://embed.crossmint.com/latest/sdk.js"></script>
   <style>
     body {font-family: Georgia, serif; background:#000; color:#fff; margin:0; padding:0; text-align:center}
     .container {max-width:900px; margin:40px auto; padding:20px;}
@@ -21,14 +22,30 @@
     <h1>222 Founding Architects</h1>
     <p>Nexus of Equity × ULIQ × Ascendii Universe</p>
     <div class="price">$1,111</div>
-    <p>One-time → Soulbound “Founding Architect #XXX” on Base<br>+ Real charity:water well built in your name<br>+ Permanent treasury allocation in the movement</p>
-    <div class="spots" id="spots">208 spots remaining (14 claimed in the last hour)</div>
-    <button onclick="alert('DM @bryansavage79 on X right now to claim your numbered spot — payment via USDT/ETH/Base — first come, first numbered')">Claim Your Spot – DM @bryansavage79</button>
+    <p>One-time → Soulbound “Founding Architect #XXX” on Base<br>+ Real charity:water well in your name<br>+ Permanent treasury allocation</p>
+    <div class="spots">208 spots remaining (14 already claimed)</div>
+
+    <button crossmint 
+            client-id="b5e2f1a3-9f4d-4e2b-8a1c-7d5e6f9a0b3c" 
+            mint-to="0xYourWalletHere" 
+            price="1111" 
+            currency="USDC" 
+            environment="production">
+      Claim Your Spot – Pay with Card or Crypto
+    </button>
+
     <div class="footer">
       metaversemallprjct.com<br>
-      Day 1 of From Bumm to Bling.<br>
-      Walking the dog with $0 → building an empire with you.
+      Day 1: From $0 and walking the dog → this.
     </div>
   </div>
+
+  <script>
+    // Optional: update spots live when someone buys
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success')) {
+      document.querySelector('.spots').innerText = "Thank you! Your Architect spot is confirmed.";
+    }
+  </script>
 </body>
 </html>
