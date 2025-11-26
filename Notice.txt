@@ -1,0 +1,13 @@
+INTERLINK — Ascendii Universe
+Copyright (c) 2025 [Your Name / Ascendii Nexus]. All rights reserved.
+
+This codebase, branding ("Ascendii", "INTERLINK", "The Forge", "Nexus Tiers", "Effort Points"), 
+and associated artwork are protected by copyright and trademark.
+
+The core protocol design, probabilistic alchemy mechanics, and federated creative intelligence 
+architecture are proprietary until November 24, 2028 under BUSL-1.1.
+
+You are encouraged to study, build upon, and deploy your own instances — but commercial 
+exploitation and rebranding require explicit written permission.
+
+Contact: [your email or Discord or https://memory.tanka.ai/Nle4SxqpFJ9XsrNbJxmh3]
